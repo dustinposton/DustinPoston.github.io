@@ -1,15 +1,81 @@
+/* Background */
+
 body {
-font-family: Arial;
-max-width: 800px;
-margin: auto;
-padding: 20px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background: linear-gradient(
+        -45deg,
+        #0f172a,
+        #1e3a8a,
+        #0f766e,
+        #1e293b
+    );
+
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Animated background */
+
+@keyframes gradientShift {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Glass panel */
+
+.glass-card {
+    width: 80%;
+    max-width: 900px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+
 h1 {
-color: navy;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 h2 {
-color: gray;
+    color: #d1d5db;
+    margin-bottom: 30px;
 }
 
+/* Paragraphs */
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
