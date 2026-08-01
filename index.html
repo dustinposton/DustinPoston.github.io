@@ -48,10 +48,15 @@ yet. I'm looking for a SOC Analyst role where I can grow and help keep organizat
 
 <p>
 Investigated a suspicious authentication alert (EventID 4625) from
-SIEM dashboard.  Worked thorougly and methodically to come to a sound conclusion.
-This was among a handful of investigations I have owned and worked through and have
-loved the journey of learning how to think like a true analyst.
+first triage through resolution: correlated firewall and endpoint
+logs, pivoted to threat intel (AbuseIPDB, VirusTotal) to confirm the
+source IP, mapped the behavior to MITRE ATT&CK T1110 (Brute Force),
+and documented the verdict, containment actions, and recommendations
+for the case file.
 </p>
+
+<img src="images/soc325-abuseipdb.png" alt="AbuseIPDB result flagging source IP for SSH brute-force activity" width="600">
+<p><em>AbuseIPDB confirming the source IP had prior reports of SSH brute-force activity.</em></p>
 
 <p>
 <a href="SOC325_Alert_Investigation.pdf">View full writeup</a>
