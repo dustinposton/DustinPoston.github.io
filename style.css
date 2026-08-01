@@ -79,3 +79,12 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+.project-img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: block;
+  margin: 12px 0;
+}
