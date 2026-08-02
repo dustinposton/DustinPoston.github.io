@@ -80,6 +80,14 @@ h2 {
     margin-bottom: 30px;
 }
 
+h4 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffffff;
+    border-left: 4px solid #7dd3fc;
+    padding-left: 12px;
+}
+
 /* Paragraphs */
 
 p {
@@ -94,4 +102,10 @@ p {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   display: block;
   margin: 12px 0;
+}
+
+.project-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 50px 0 40px 0;
 }
