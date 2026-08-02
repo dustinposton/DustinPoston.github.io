@@ -61,6 +61,12 @@ body {
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
+@media (max-width: 700px) {
+  .glass-card {
+    width: 92%;
+  }
+}
+
 /* Headings */
 
 h1 {
