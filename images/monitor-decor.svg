@@ -1,0 +1,69 @@
+<svg width="260" height="900" viewBox="0 0 260 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1b33"/>
+      <stop offset="100%" stop-color="#0a1428"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Monitor 1 -->
+  <g transform="translate(20,40)">
+    <rect x="0" y="0" width="220" height="150" rx="10" fill="url(#screenGrad)" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="95" y="150" width="30" height="18" fill="#0a1428"/>
+    <rect x="70" y="168" width="80" height="8" rx="4" fill="#0a1428"/>
+    <g filter="url(#softGlow)">
+      <rect x="16" y="18" width="90" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.8"/>
+      <rect x="16" y="34" width="140" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.5"/>
+      <rect x="16" y="50" width="60" height="6" rx="3" fill="#4ade80" fill-opacity="0.7"/>
+      <rect x="16" y="66" width="170" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.4"/>
+      <rect x="16" y="82" width="110" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.6"/>
+      <rect x="16" y="98" width="150" height="6" rx="3" fill="#f87171" fill-opacity="0.55"/>
+      <rect x="16" y="114" width="80" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.5"/>
+      <rect x="16" y="130" width="130" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.35"/>
+    </g>
+  </g>
+
+  <!-- Monitor 2 -->
+  <g transform="translate(20,260)">
+    <rect x="0" y="0" width="220" height="150" rx="10" fill="url(#screenGrad)" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="95" y="150" width="30" height="18" fill="#0a1428"/>
+    <rect x="70" y="168" width="80" height="8" rx="4" fill="#0a1428"/>
+    <g filter="url(#softGlow)">
+      <rect x="16" y="18" width="130" height="6" rx="3" fill="#4ade80" fill-opacity="0.7"/>
+      <rect x="16" y="34" width="90" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.5"/>
+      <rect x="16" y="50" width="160" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.4"/>
+      <rect x="16" y="66" width="70" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.6"/>
+      <rect x="16" y="82" width="140" height="6" rx="3" fill="#f87171" fill-opacity="0.5"/>
+      <rect x="16" y="98" width="100" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.55"/>
+      <rect x="16" y="114" width="170" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.35"/>
+      <rect x="16" y="130" width="60" height="6" rx="3" fill="#4ade80" fill-opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Monitor 3 -->
+  <g transform="translate(20,480)">
+    <rect x="0" y="0" width="220" height="150" rx="10" fill="url(#screenGrad)" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="95" y="150" width="30" height="18" fill="#0a1428"/>
+    <rect x="70" y="168" width="80" height="8" rx="4" fill="#0a1428"/>
+    <g filter="url(#softGlow)">
+      <rect x="16" y="18" width="100" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.5"/>
+      <rect x="16" y="34" width="150" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.4"/>
+      <rect x="16" y="50" width="80" height="6" rx="3" fill="#f87171" fill-opacity="0.5"/>
+      <rect x="16" y="66" width="130" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.6"/>
+      <rect x="16" y="82" width="60" height="6" rx="3" fill="#4ade80" fill-opacity="0.7"/>
+      <rect x="16" y="98" width="170" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.35"/>
+      <rect x="16" y="114" width="90" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.55"/>
+      <rect x="16" y="130" width="120" height="6" rx="3" fill="#7dd3fc" fill-opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- faint vertical scanline overlay -->
+  <rect x="0" y="0" width="260" height="900" fill="url(#screenGrad)" fill-opacity="0.03"/>
+</svg>
