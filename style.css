@@ -117,33 +117,4 @@ p {
     margin: 50px 0 40px 0;
 }
 
-.terminal-bg {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    pointer-events: none;
-    font-family: 'Consolas', monospace;
-}
 
-.term-col {
-    white-space: nowrap;
-    color: #7dd3fc;
-    line-height: 22px;
-    animation-name: termScroll;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes termScroll {
-    from { transform: translateY(0); }
-    to { transform: translateY(-50%); }
-}
-
-@media (max-width: 700px) {
-    .terminal-bg {
-        display: none;
-    }
-}
