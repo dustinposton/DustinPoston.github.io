@@ -6,12 +6,7 @@
 </head>
 
 <body>
-<div class="bg-monitor">
-  <div class="bg-screen">
-    <pre id="bgTerm" class="bg-term"></pre>
-  </div>
-  <div class="bg-monitor-led"></div>
-</div>
+
 
 <div class="glass-card">
 
@@ -106,59 +101,6 @@ Download Resume
 <p>dposton0@gmail.com</p>
 
 </div>
-<script>
-(function() {
-  const commands = [["ls -la", ["total 32", "drwxr-xr-x  6 user user 4096 Documents", "drwxr-xr-x  3 user user 4096 Downloads", "-rw-r--r--  1 user user  512 notes.txt"]], ["cd Documents", []], ["pwd", ["/home/user/Documents"]], ["cd ..", []], ["whoami", ["user"]], ["dir", ["Desktop   Documents   Downloads   scripts   reports"]], ["mkdir reports", []], ["rm temp.log", []], ["rm -r old_cache/", []], ["touch readme.md", []], ["cp notes.txt backup.txt", []], ["mv backup.txt archive/", []], ["ifconfig", ["eth0: flags=4163<UP,BROADCAST,RUNNING>", "        inet 10.0.4.12  netmask 255.255.255.0", "        ether 3a:9c:11:2f:aa:01"]], ["ping -c 3 10.0.0.1", ["64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=0.412 ms", "64 bytes from 10.0.0.1: icmp_seq=2 ttl=64 time=0.398 ms", "3 packets transmitted, 3 received, 0% packet loss"]], ["uname -a", ["Linux workstation 6.2.0-generic x86_64 GNU/Linux"]], ["date", ["Sun Aug  2 09:14:03 UTC 2026"]], ["uptime", [" 09:14:05 up 14 days,  3:22,  2 users,  load average: 0.12, 0.09, 0.05"]], ["df -h", ["Filesystem   Size  Used Avail Use%", "/dev/sda1     40G   12G   26G  32%"]], ["free -m", ["              total   used   free", "Mem:           7982   2140   4108"]], ["ps aux | head -3", ["USER  PID  %CPU  %MEM  COMMAND", "user  1021  0.3   1.1  bash", "user  1090  0.0   0.4  sshd"]], ["top -b -n1 | head -2", ["Tasks: 118 total,   1 running", "%Cpu(s):  3.2 us,  1.1 sy"]], ["history | tail -3", ["501  ls", "502  cd logs", "503  cat syslog"]], ["clear", []], ["cat notes.txt", ["review firewall rules Friday", "check backup job status"]], ["head -3 syslog", ["Jul 30 08:01:02 host CRON started", "Jul 30 08:01:03 host session opened", "Jul 30 08:02:11 host service restarted"]], ["tail -3 syslog", ["Aug 01 22:11:04 host session closed", "Aug 01 22:12:00 host cron job completed", "Aug 02 00:00:01 host logrotate finished"]], ["grep error syslog", ["no matches found"]], ["find . -name '*.log'", ["./logs/syslog.log", "./logs/auth.log"]], ["wc -l syslog", ["482 syslog"]], ["chmod 644 notes.txt", []], ["chown user:user backup.txt", []], ["nano config.yaml", ["opening editor..."]], ["vim scan.sh", ["opening editor..."]], ["git status", ["On branch main", "nothing to commit, working tree clean"]], ["git log --oneline -3", ["a1b2c3d update readme", "e4f5a6b fix typo", "9c8d7e6 initial commit"]], ["python3 --version", ["Python 3.11.6"]], ["node -v", ["v20.11.0"]], ["npm list --depth=0", ["project@1.0.0", "\u251c\u2500\u2500 express@4.18.2"]], ["docker ps", ["CONTAINER ID   IMAGE       STATUS", "(no containers running)"]], ["systemctl status ssh", ["\u25cf ssh.service - OpenSSH server", "     Active: active (running)"]], ["netstat -tulpn | head -3", ["Proto  Local Address     State", "tcp    0.0.0.0:22        LISTEN"]], ["nslookup example.local", ["Server:  10.0.0.1", "Address: 10.0.0.1#53"]], ["traceroute 10.0.0.1", [" 1  gateway (10.0.0.1)  0.512 ms"]], ["tar -xvf backup.tar.gz", ["backup/", "backup/notes.txt"]], ["unzip archive.zip", ["Archive:  archive.zip", "  inflating: report.pdf"]], ["jobs", ["[1]+  Running   sync_job &"]], ["crontab -l", ["0 2 * * * /home/user/scripts/backup.sh"]], ["du -sh Documents/", ["128M    Documents/"]], ["lsblk", ["NAME   SIZE  TYPE MOUNTPOINT", "sda    40G   disk /"]], ["echo $PATH", ["/usr/local/bin:/usr/bin:/bin"]], ["kill 1090", []], ["exit", ["logout"]]];
-  const prompt = "user@soc:~$ ";
-  const maxLines = 22;
-  let lines = [];
-  const el = document.getElementById('bgTerm');
-  if (!el) return;
 
-  function render() {
-    el.textContent = lines.join("\n");
-  }
-
-  function pushLine(text) {
-    lines.push(text);
-    if (lines.length > maxLines) lines.shift();
-    render();
-  }
-
-  function typeCommand(cmd, cb) {
-    let i = 0;
-    lines.push("");
-    function step() {
-      if (i <= cmd.length) {
-        const cursor = (i % 2 === 0) ? "_" : "";
-        lines[lines.length - 1] = prompt + cmd.slice(0, i) + cursor;
-        render();
-        i++;
-        setTimeout(step, 35 + Math.random() * 45);
-      } else {
-        lines[lines.length - 1] = prompt + cmd;
-        render();
-        cb();
-      }
-    }
-    step();
-  }
-
-  function runNext() {
-    const entry = commands[Math.floor(Math.random() * commands.length)];
-    const cmd = entry[0];
-    const out = entry[1];
-    typeCommand(cmd, function() {
-      setTimeout(function() {
-        out.forEach(function(line) { pushLine(line); });
-        pushLine("");
-        setTimeout(runNext, 700 + Math.random() * 900);
-      }, 180);
-    });
-  }
-
-  runNext();
-})();
-</script>
 </body>
 </html>
