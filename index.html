@@ -1,106 +1,224 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dustin Poston Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-
 <div class="glass-card">
 
-<h1>Dustin Poston</h1>
+    <h1>Dustin Poston</h1>
 
-<h2>Cybersecurity Analyst/Threat Detection Portfolio</h2>
+    <h2>Cybersecurity Analyst Portfolio</h2>
 
-<h3>About Me</h3>
+    <div class="nav-buttons">
+        <a href="#projects">Projects</a>
+        <a href="Poston_Dustin.pdf">Resume</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-<p>
-Blue team–focused cybersecurity professional building hands-on detection
-and response skills in Splunk and Microsoft Defender, backed by CySA+,
-SSCP, and Security+. I like taking an alert and working it all the way
-through — investigate, correlate against threat intel, map to MITRE
-ATT&CK, and document the reasoning so someone else can follow it.
-Every project below started as something I didn't fully know how to do
-yet. I'm looking for a SOC Analyst role where I can grow and help keep organizations safe!
-</p>
+    <h3>Portfolio Summary</h3>
 
-<h2>Skills</h2>
+    <div class="summary-grid">
 
-<h4>Detection & Response</h4>
-<ul>
-    <li>Splunk (SIEM detection & correlation)</li>
-    <li>Microsoft Defender</li>
-    <li>Sysmon / Wireshark</li>
-    <li>MITRE ATT&CK Mapping</li>
-    <li>Threat Intel Correlation (AbuseIPDB, VirusTotal)</li>
-</ul>
+        <div class="summary-card">
+            <div class="summary-number">6</div>
+            <div class="summary-label">Virtual Machines</div>
+        </div>
 
-<h4>Scripting & Infrastructure</h4>
-<ul>
-    <li>Python, PowerShell, Bash, SQL</li>
-    <li>Active Directory / Windows 10-11</li>
-    <li>FortiGate & Palo Alto Firewalls</li>
-</ul>
-    
-<hr class="project-divider">    
-<h3>Projects</h3>
+        <div class="summary-card">
+            <div class="summary-number">3</div>
+            <div class="summary-label">Security Investigations</div>
+        </div>
 
-<h4>SOC Alert Investigation — Brute Force Detection</h4>
+        <div class="summary-card">
+            <div class="summary-number">2</div>
+            <div class="summary-label">Vulnerability Assessments</div>
+        </div>
 
-<img src="images/SOC325_Alert.png" alt="Alert to be investigated, Low Severity" class="project-img">
-<p><em>Alert to be investigated, Low Severity.</em></p>
-    
-<p>
-Investigated a suspicious authentication alert (EventID 4625) from
-first triage through resolution: correlated firewall and endpoint
-logs, pivoted to threat intel (AbuseIPDB, VirusTotal) to confirm the
-source IP, mapped the behavior to MITRE ATT&CK T1110 (Brute Force),
-and documented the verdict, containment actions, and recommendations
-for the case file.
-</p>
+        <div class="summary-card">
+            <div class="summary-number">5</div>
+            <div class="summary-label">Security Certifications</div>
+        </div>
 
+    </div>
 
-<img src="images/SOC325_VirusTotal.png" alt="VirusTotal result flagging source IP for SSH brute-force activity" class="project-img">
-<p><em>VirusTotal result flagging source IP for SSH brute-force activity.</em></p>
-    
-<p>
-<a href="SOC325_Alert_Investigation.pdf">View full writeup</a>
-</p>
+    <p>
+        Built and secured a virtual enterprise environment utilizing
+        Active Directory, Group Policy, pfSense, Splunk, Sysmon,
+        Nessus, Kali Linux, and Windows workstations. Conducted
+        vulnerability assessments, simulated attack activity,
+        investigated security events, and documented findings through
+        risk-based reporting and remediation recommendations.
+    </p>
 
-<hr class="project-divider">
-<h4>SOC Alert Investigation — Suspicious hh.exe Usage</h4>
+    <h3>Security Domains</h3>
 
-<img src="images/SOC113_Event.png" alt="Alert details for SOC113 suspicious hh.exe usage involving WinRAR.chm" class="project-img">
-<p><em>Alert flagged for suspicious hh.exe usage</em></p>
+    <div class="domain-card">
 
-<p>
-Investigated a suspicious-file-execution alert (EventID 44) involving hh.exe
-opening a CHM file on a Windows endpoint: verified the file hash against
-VirusTotal and the legitimate WinRAR.chm hash, reviewed endpoint history
-and network activity for signs of compromise, and mapped the behavior to
-MITRE ATT&CK T1218.001 (Compiled HTML File) before concluding the case.
-</p>
+        <div class="domain">
 
-<img src="images/SOC113_Endpoint_Information.png" alt="Endpoint information and process history for host BillPRD" class="project-img">
-<p><em>Endpoint history reviewed for follow-on activity</em></p>
+            <div class="domain-name">
+                <span>Identity & Access Management</span>
+                <span>90%</span>
+            </div>
 
-<p>
-<a href="SOC113_Alert_Investigation.pdf">View full writeup</a>
-</p>
-<hr class="project-divider">     
-<h4>Resume</h4>
+            <div class="progress-bar">
+                <div class="progress" style="width:90%;"></div>
+            </div>
 
-<a href="Poston_Dustin.pdf">
-Download Resume
-</a>
+        </div>
 
-<h4>Contact</h4>
+        <div class="domain">
 
-<p>dposton0@gmail.com</p>
+            <div class="domain-name">
+                <span>Security Operations</span>
+                <span>85%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" style="width:85%;"></div>
+            </div>
+
+        </div>
+
+        <div class="domain">
+
+            <div class="domain-name">
+                <span>Vulnerability Management</span>
+                <span>80%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" style="width:80%;"></div>
+            </div>
+
+        </div>
+
+        <div class="domain">
+
+            <div class="domain-name">
+                <span>Risk Assessment</span>
+                <span>75%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" style="width:75%;"></div>
+            </div>
+
+        </div>
+
+        <div class="domain">
+
+            <div class="domain-name">
+                <span>Network Security</span>
+                <span>75%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" style="width:75%;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section id="projects">
+
+        <h3>Enterprise Security Lab</h3>
+
+        <div class="project-card">
+
+            <p>
+                Designed and deployed a virtual enterprise environment
+                to develop practical experience in identity management,
+                vulnerability management, detection engineering,
+                security monitoring, and incident investigation.
+            </p>
+
+            <img src="images/VirtualMachines.png"
+                 alt="Enterprise Security Lab Architecture"
+                 class="project-img">
+
+            <h4>Lab Infrastructure</h4>
+
+            <ul>
+                <li>pfSense Firewall</li>
+                <li>Windows Server Active Directory</li>
+                <li>Windows 11 Workstations</li>
+                <li>Kali Linux Attacker System</li>
+                <li>Ubuntu Security Tools Server</li>
+                <li>Splunk & Sysmon Monitoring</li>
+                <li>Nessus Vulnerability Scanner</li>
+            </ul>
+
+            <h4>Identity & Access Management</h4>
+
+            <ul>
+                <li>Created and managed domain accounts</li>
+                <li>Implemented password complexity policies</li>
+                <li>Configured account lockout controls</li>
+                <li>Applied Group Policy restrictions</li>
+                <li>Controlled workstation resource access</li>
+            </ul>
+
+            <h4>Vulnerability Management</h4>
+
+            <img src="images/LucyCredentialScan.png"
+                 alt="Credentialed Nessus Vulnerability Assessment"
+                 class="project-img">
+
+            <p>
+                Conducted host discovery, unauthenticated scanning,
+                authenticated scanning, risk analysis, and remediation
+                documentation using Nessus Essentials.
+            </p>
+
+            <h4>Security Monitoring & Investigation</h4>
+
+            <p>
+                Generated attack telemetry from a Kali Linux system,
+                collected endpoint logs with Sysmon, centralized
+                telemetry in Splunk, and investigated suspicious
+                activity through security monitoring workflows.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h3>Incident Investigations</h3>
+
+        <div class="project-card">
+
+            <h4>Brute Force Investigation</h4>
+
+            <p>
+                Investigated suspicious authentication activity,
+                correlated event logs and threat intelligence,
+                mapped activity to MITRE ATT&CK, and documented
+                findings and recommendations.
+            </p>
+
+            <a href="SOC325_Alert_Investigation.pdf">
+                View Investigation
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h4>Suspicious hh.exe Investigation</h4>
+
+            <p>
+                Investigated suspicious process execution,
+                validated file reputation using VirusTotal,
+                reviewed endpoint activity, and documented
+                investigation findings.
+            </p>
+
+            <a href="SOC113_Alert_Investigation.pdf">
+                View Investigation
+            </a>
+
+        </div>
+
+    </section>
 
 </div>
-
-</body>
-</html>
