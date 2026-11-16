@@ -2,6 +2,16 @@
    Global Styles
 ========================================== */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 40px 20px;
@@ -23,6 +33,7 @@ body {
 }
 
 @keyframes gradientShift {
+
     0% {
         background-position: 0% 50%;
     }
@@ -36,11 +47,23 @@ body {
     }
 }
 
+/* Respect users who turn off motion */
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 /* ==========================================
    Main Container
 ========================================== */
 
 .glass-card {
+
     width: 90%;
     max-width: 1400px;
 
@@ -52,12 +75,13 @@ body {
 
     border: 1px solid rgba(255,255,255,0.12);
 
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+
     border-radius: 24px;
 
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-
-    box-shadow: 0 25px 60px rgba(0,0,0,.30);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.30);
 }
 
 /* ==========================================
@@ -65,11 +89,315 @@ body {
 ========================================== */
 
 h1 {
+
     font-size: 3.5rem;
     text-align: center;
+
     margin-bottom: 10px;
+
     font-weight: 700;
 }
 
 h2 {
-    text
+
+    text-align: center;
+
+    color: #7dd3fc;
+
+    margin-bottom: 40px;
+}
+
+h3 {
+
+    font-size: 2rem;
+
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    color: #ffffff;
+}
+
+h4 {
+
+    border-left: 4px solid #38bdf8;
+
+    padding-left: 12px;
+
+    color: white;
+}
+
+p {
+
+    color: #d1d5db;
+
+    line-height: 1.7;
+
+    font-size: 1.05rem;
+}
+
+ul {
+
+    color: #d1d5db;
+
+    line-height: 1.8;
+
+    padding-left: 24px;
+}
+
+/* Land section headings below the top edge when jumping via nav */
+section {
+    scroll-margin-top: 20px;
+}
+
+/* ==========================================
+   Navigation Buttons
+========================================== */
+
+.nav-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin: 30px 0 50px 0;
+}
+
+.nav-buttons a {
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    transition: all .25s ease;
+}
+
+.nav-buttons a:hover,
+.nav-buttons a:focus-visible {
+
+    transform: translateY(-2px);
+
+    background: rgba(56,189,248,0.20);
+
+    border-color: #38bdf8;
+}
+
+.contact-links {
+    justify-content: flex-start;
+    margin: 20px 0 0 0;
+}
+
+/* Button-style link used inside project cards */
+.btn {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    background: rgba(56,189,248,0.15);
+
+    border: 1px solid #38bdf8;
+
+    transition: all .25s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+
+    transform: translateY(-2px);
+
+    background: rgba(56,189,248,0.30);
+}
+
+/* ==========================================
+   Portfolio Summary Cards
+========================================== */
+
+.summary-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 20px;
+
+    margin-bottom: 50px;
+}
+
+.summary-card {
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    text-align: center;
+}
+
+.summary-number {
+
+    font-size: 2.3rem;
+
+    font-weight: bold;
+
+    color: #7dd3fc;
+}
+
+.summary-label {
+
+    margin-top: 10px;
+
+    color: #d1d5db;
+}
+
+/* ==========================================
+   Security Domains Section
+========================================== */
+
+.domain-card {
+
+    background: rgba(255,255,255,0.05);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    margin-bottom: 50px;
+}
+
+.domain {
+
+    margin-bottom: 25px;
+}
+
+.domain:last-child {
+    margin-bottom: 0;
+}
+
+.domain-name {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+.progress-bar {
+
+    height: 12px;
+
+    background: rgba(255,255,255,.10);
+
+    border-radius: 100px;
+
+    overflow: hidden;
+}
+
+.progress {
+
+    height: 100%;
+
+    border-radius: 100px;
+
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #14b8a6
+    );
+}
+
+/* ==========================================
+   Project Sections
+========================================== */
+
+.project-card {
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 50px;
+}
+
+.project-img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+}
+
+.project-divider {
+
+    border: none;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    margin: 60px 0;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .glass-card {
+        padding: 25px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .domain-card {
+        padding: 20px;
+    }
+}
