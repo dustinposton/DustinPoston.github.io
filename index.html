@@ -24,100 +24,98 @@
 
     <h3>Portfolio Summary</h3>
 
-    <div class="summary-grid">
-
-        <div class="summary-card">
-            <div class="summary-number">6</div>
-            <div class="summary-label">Virtual Machines</div>
-        </div>
-
-        <div class="summary-card">
-            <div class="summary-number">3</div>
-            <div class="summary-label">Security Investigations</div>
-        </div>
-
-        <div class="summary-card">
-            <div class="summary-number">2</div>
-            <div class="summary-label">Vulnerability Assessments</div>
-        </div>
-
-        <div class="summary-card">
-            <div class="summary-number">5</div>
-            <div class="summary-label">Security Certifications</div>
-        </div>
-
-    </div>
-
-    <p>
-        Built and secured a virtual enterprise environment utilizing
-        Active Directory, Group Policy, pfSense, Splunk, Sysmon,
-        Nessus, Kali Linux, and Windows workstations. Conducted
-        vulnerability assessments, simulated attack activity,
-        investigated security events, and documented findings through
-        risk-based reporting and remediation recommendations.
-    </p>
+    <p>Write summary here</p>
 
     <h3>Security Domains</h3>
 
     <div class="domain-card">
 
-        <div class="domain">
-            <div class="domain-name">
-                <span>Identity &amp; Access Management</span>
-                <span>90%</span>
+        <div class="domain-list">
+
+            <div class="domain">
+                <div class="domain-name">
+                    <span>Identity &amp; Access Management</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:90%;"></div>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div class="progress" style="width:90%;"></div>
+
+            <div class="domain">
+                <div class="domain-name">
+                    <span>Security Operations</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:85%;"></div>
+                </div>
             </div>
+
+            <div class="domain">
+                <div class="domain-name">
+                    <span>Vulnerability Management</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:80%;"></div>
+                </div>
+            </div>
+
+            <div class="domain">
+                <div class="domain-name">
+                    <span>Risk Assessment</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:75%;"></div>
+                </div>
+            </div>
+
+            <div class="domain">
+                <div class="domain-name">
+                    <span>Network Security</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width:75%;"></div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="domain">
-            <div class="domain-name">
-                <span>Security Operations</span>
-                <span>85%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress" style="width:85%;"></div>
-            </div>
-        </div>
-
-        <div class="domain">
-            <div class="domain-name">
-                <span>Vulnerability Management</span>
-                <span>80%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress" style="width:80%;"></div>
-            </div>
-        </div>
-
-        <div class="domain">
-            <div class="domain-name">
-                <span>Risk Assessment</span>
-                <span>75%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress" style="width:75%;"></div>
-            </div>
-        </div>
-
-        <div class="domain">
-            <div class="domain-name">
-                <span>Network Security</span>
-                <span>75%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress" style="width:75%;"></div>
-            </div>
+        <div class="domain-icon" aria-hidden="true">
+            <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="100%" stop-color="#14b8a6"/>
+                    </linearGradient>
+                </defs>
+                <path d="M50 5 L90 20 V58 C90 85 72 105 50 115 C28 105 10 85 10 58 V20 Z"
+                      fill="rgba(56,189,248,0.12)"
+                      stroke="url(#shieldGradient)"
+                      stroke-width="3"
+                      stroke-linejoin="round"/>
+                <path d="M32 60 L45 73 L69 45"
+                      fill="none"
+                      stroke="url(#shieldGradient)"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
         </div>
 
     </div>
 
     <section id="projects">
 
-        <h3>Enterprise Security Lab</h3>
+        <h3>Security Labs</h3>
 
+        <!-- Lab 1 -->
         <div class="project-card">
+
+            <h4>Lab 1: Enterprise Environment Build</h4>
 
             <p>
                 Designed and deployed a virtual enterprise environment
@@ -142,7 +140,12 @@
                 <li>Nessus Vulnerability Scanner</li>
             </ul>
 
-            <h4>Identity &amp; Access Management</h4>
+        </div>
+
+        <!-- Lab 2 -->
+        <div class="project-card">
+
+            <h4>Lab 2: Identity &amp; Access Management</h4>
 
             <ul>
                 <li>Created and managed domain accounts</li>
@@ -152,7 +155,12 @@
                 <li>Controlled workstation resource access</li>
             </ul>
 
-            <h4>Vulnerability Management</h4>
+        </div>
+
+        <!-- Lab 3 -->
+        <div class="project-card">
+
+            <h4>Lab 3: Vulnerability Management</h4>
 
             <img src="images/LucyCredentialScan.png"
                  alt="Credentialed Nessus Vulnerability Assessment"
@@ -164,7 +172,12 @@
                 documentation using Nessus Essentials.
             </p>
 
-            <h4>Security Monitoring &amp; Investigation</h4>
+        </div>
+
+        <!-- Lab 4 -->
+        <div class="project-card">
+
+            <h4>Lab 4: Security Monitoring &amp; Investigation</h4>
 
             <p>
                 Generated attack telemetry from a Kali Linux system,
