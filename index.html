@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dustin Poston - Cybersecurity Analyst Portfolio">
+    <meta name="description" content="Dustin Poston - Security Analyst | Vulnerability Management Portfolio">
     <title>Dustin Poston | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,10 +13,13 @@
 
     <h1>Dustin Poston</h1>
 
-    <h2>Cybersecurity Analyst Portfolio</h2>
+    <h2 class="role">Security Analyst | Vulnerability Management</h2>
+
+    <p class="tagline">Additional experience in GRC and IT audit support</p>
 
     <nav class="nav-buttons">
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="Poston_Dustin.pdf">Resume</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -50,59 +53,51 @@
 
     </section>
 
-    <h3>Security Domains</h3>
+    <h3>Skills &amp; Tools</h3>
 
     <div class="domain-card">
 
-        <div class="domain-list">
+        <div class="skills-list">
 
-            <div class="domain">
-                <div class="domain-name">
-                    <span>Identity &amp; Access Management</span>
-                    <span>90%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:90%;"></div>
+            <div class="skill-group">
+                <div class="skill-label">Security Domains</div>
+                <div class="chips">
+                    <span class="chip">Vulnerability Management</span>
+                    <span class="chip">Security Operations</span>
+                    <span class="chip">Identity &amp; Access Management</span>
+                    <span class="chip">Risk Assessment</span>
+                    <span class="chip">Network Security</span>
+                    <span class="chip">Compliance &amp; Audit Support</span>
                 </div>
             </div>
 
-            <div class="domain">
-                <div class="domain-name">
-                    <span>Security Operations</span>
-                    <span>85%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:85%;"></div>
-                </div>
-            </div>
-
-            <div class="domain">
-                <div class="domain-name">
-                    <span>Vulnerability Management</span>
-                    <span>80%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:80%;"></div>
+            <div class="skill-group">
+                <div class="skill-label">Tools</div>
+                <div class="chips">
+                    <span class="chip">Nessus</span>
+                    <span class="chip">Splunk</span>
+                    <span class="chip">Sysmon</span>
+                    <span class="chip">pfSense</span>
+                    <span class="chip">Active Directory</span>
+                    <span class="chip">Group Policy</span>
+                    <span class="chip">Kali Linux</span>
+                    <span class="chip">VirusTotal</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">JIRA</span>
                 </div>
             </div>
 
-            <div class="domain">
-                <div class="domain-name">
-                    <span>Risk Assessment</span>
-                    <span>75%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:75%;"></div>
-                </div>
-            </div>
-
-            <div class="domain">
-                <div class="domain-name">
-                    <span>Network Security</span>
-                    <span>75%</span>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width:75%;"></div>
+            <div class="skill-group">
+                <div class="skill-label">Frameworks &amp; Standards</div>
+                <div class="chips">
+                    <span class="chip">MITRE ATT&amp;CK</span>
+                    <span class="chip">NIST 800-53</span>
+                    <span class="chip">NIST 800-171</span>
+                    <span class="chip">ISO 27001</span>
+                    <span class="chip">PCI DSS</span>
+                    <span class="chip">HIPAA</span>
+                    <span class="chip">SOC 2</span>
+                    <span class="chip">CJIS</span>
                 </div>
             </div>
 
@@ -200,6 +195,17 @@
                 <li>Nessus Vulnerability Scanner</li>
             </ul>
 
+            <dl class="case-study">
+                <dt>Objective</dt>
+                <dd>Write objective here</dd>
+
+                <dt>Design Decisions</dt>
+                <dd>Write why you built the network the way you did (segmentation, firewall rules, etc.) here</dd>
+
+                <dt>Lessons Learned</dt>
+                <dd>Write lessons learned here</dd>
+            </dl>
+
         </div>
 
         <!-- Lab 2 -->
@@ -215,10 +221,26 @@
                 <li>Controlled workstation resource access</li>
             </ul>
 
+            <dl class="case-study">
+                <dt>Objective</dt>
+                <dd>Write objective here</dd>
+
+                <dt>Tools</dt>
+                <dd>Windows Server Active Directory, Group Policy</dd>
+
+                <dt>Results</dt>
+                <dd>Write what you tested and what happened (for example, lockout behavior) here</dd>
+
+                <dt>Lessons Learned</dt>
+                <dd>Write lessons learned here</dd>
+            </dl>
+
         </div>
 
-        <!-- Lab 3 -->
-        <div class="project-card">
+        <!-- Lab 3 (featured) -->
+        <div class="project-card featured">
+
+            <span class="featured-badge">&#9733; Featured</span>
 
             <h4>Lab 3: Vulnerability Management</h4>
 
@@ -231,6 +253,33 @@
                 authenticated scanning, risk analysis, and remediation
                 documentation using Nessus Essentials.
             </p>
+
+            <dl class="case-study">
+                <dt>Scope</dt>
+                <dd>Write which hosts and networks you scanned here</dd>
+
+                <dt>Methodology</dt>
+                <dd>Write your process here (host discovery, unauthenticated scan, credentialed scan)</dd>
+
+                <dt>Key Findings</dt>
+                <dd>Write your most important findings and their severity here</dd>
+
+                <dt>Prioritization</dt>
+                <dd>Write how you ranked findings (CVSS, exploitability, asset importance) here</dd>
+
+                <dt>Remediation</dt>
+                <dd>Write what you recommended or fixed here</dd>
+
+                <dt>Rescan Result</dt>
+                <dd>Write what changed after remediation here</dd>
+
+                <dt>Lessons Learned</dt>
+                <dd>Write lessons learned here</dd>
+            </dl>
+
+            <!-- When your sanitized report is ready, add it to your folder and uncomment this:
+            <a class="btn" href="Vulnerability_Assessment_Report.pdf">View Full Report</a>
+            -->
 
         </div>
 
@@ -245,6 +294,23 @@
                 telemetry in Splunk, and investigated suspicious
                 activity through security monitoring workflows.
             </p>
+
+            <dl class="case-study">
+                <dt>Objective</dt>
+                <dd>Write objective here</dd>
+
+                <dt>Attacks Simulated</dt>
+                <dd>Write which attacks you ran from Kali here</dd>
+
+                <dt>Detections</dt>
+                <dd>Write the Splunk searches or alerts you built here</dd>
+
+                <dt>MITRE ATT&amp;CK Mapping</dt>
+                <dd>Write the techniques you observed here</dd>
+
+                <dt>Lessons Learned</dt>
+                <dd>Write lessons learned here</dd>
+            </dl>
 
         </div>
 
@@ -290,6 +356,62 @@
 
     </section>
 
+    <section id="experience">
+
+        <h3>Experience</h3>
+
+        <div class="project-card job">
+
+            <div class="job-header">
+                <div>
+                    <h4>Technical Specialist</h4>
+                    <div class="job-company">Contracted to DoorDash</div>
+                </div>
+                <div class="job-dates">June 2026 &ndash; Present</div>
+            </div>
+
+            <ul>
+                <li>Troubleshoot data and inventory issues using SQL, JIRA, and Salesforce</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card job">
+
+            <div class="job-header">
+                <div>
+                    <h4>GRC Analyst Intern</h4>
+                    <div class="job-company">Continuum GRC</div>
+                </div>
+                <div class="job-dates">January 2025 &ndash; February 2026</div>
+            </div>
+
+            <ul>
+                <li>Mapped controls across NIST 800-53/171, ISO 27001, PCI DSS, HIPAA, SOC 2, and CJIS into compliance matrices for clients</li>
+                <li>Shadowed IT auditors on evidence review and the firm's scoring system</li>
+                <li>Updated audit-readiness forms</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card job">
+
+            <div class="job-header">
+                <div>
+                    <h4>IT Support</h4>
+                    <div class="job-company">Water Tech / ADT Restoration</div>
+                </div>
+                <div class="job-dates">2012 &ndash; 2023</div>
+            </div>
+
+            <ul>
+                <li>Administered Active Directory user accounts and permissions</li>
+            </ul>
+
+        </div>
+
+    </section>
+
     <section id="education">
 
         <h3>Education &amp; Certifications</h3>
@@ -322,7 +444,7 @@
 
         <div class="project-card">
 
-            <p>I'm looking for an entry-level GRC or cybersecurity analyst role. Feel free to reach out.</p>
+            <p>I'm looking for a security analyst or vulnerability management role. Feel free to reach out.</p>
 
             <div class="nav-buttons contact-links">
                 <!-- Replace these placeholders with your real details -->
