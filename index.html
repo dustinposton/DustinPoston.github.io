@@ -7,103 +7,50 @@
     <title>Dustin Poston | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
-<div class="glass-card">
-
-    <h1>Dustin Poston</h1>
-
-    <h2 class="role">Security Analyst | Vulnerability Management</h2>
-
-    <p class="tagline">Additional experience in GRC and IT audit support</p>
-
-    <nav class="nav-buttons">
+<!-- ==========================================
+     Sticky Top Navigation
+========================================== -->
+<nav class="topbar">
+    <a class="brand" href="#top">Dustin Poston</a>
+    <div class="topbar-links">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="Poston_Dustin.pdf">Resume</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-    </nav>
+        <a href="Poston_Dustin.pdf">Resume</a>
+    </div>
+</nav>
 
-    <h3>Portfolio Summary</h3>
+<!-- ==========================================
+     Hero
+========================================== -->
+<header class="hero">
 
-    <p>Write summary here</p>
+    <div class="hero-inner">
 
-    <section id="current-project">
+        <div class="hero-text">
 
-        <h3>Currently Working On</h3>
+            <p class="hero-prompt">$ whoami</p>
 
-        <div class="project-card current-project">
+            <h1>Dustin Poston</h1>
 
-            <span class="status-badge">
-                <span class="status-dot"></span>
-                In Progress
-            </span>
+            <p class="hero-role">
+                <span id="typed">Security Analyst | Vulnerability Management</span><span class="cursor" aria-hidden="true">|</span>
+            </p>
 
-            <h4>Write project name here</h4>
+            <p class="hero-tagline">Additional experience in GRC and IT audit support</p>
 
-            <p>Write a short description of what you're building or learning here.</p>
-
-            <ul>
-                <li>Tools or frameworks you're using</li>
-                <li>What you're hoping to accomplish</li>
-            </ul>
-
-        </div>
-
-    </section>
-
-    <h3>Skills &amp; Tools</h3>
-
-    <div class="domain-card">
-
-        <div class="skills-list">
-
-            <div class="skill-group">
-                <div class="skill-label">Security Domains</div>
-                <div class="chips">
-                    <span class="chip">Vulnerability Management</span>
-                    <span class="chip">Security Operations</span>
-                    <span class="chip">Identity &amp; Access Management</span>
-                    <span class="chip">Risk Assessment</span>
-                    <span class="chip">Network Security</span>
-                    <span class="chip">Compliance &amp; Audit Support</span>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <div class="skill-label">Tools</div>
-                <div class="chips">
-                    <span class="chip">Nessus</span>
-                    <span class="chip">Splunk</span>
-                    <span class="chip">Sysmon</span>
-                    <span class="chip">pfSense</span>
-                    <span class="chip">Active Directory</span>
-                    <span class="chip">Group Policy</span>
-                    <span class="chip">Kali Linux</span>
-                    <span class="chip">VirusTotal</span>
-                    <span class="chip">SQL</span>
-                    <span class="chip">JIRA</span>
-                </div>
-            </div>
-
-            <div class="skill-group">
-                <div class="skill-label">Frameworks &amp; Standards</div>
-                <div class="chips">
-                    <span class="chip">MITRE ATT&amp;CK</span>
-                    <span class="chip">NIST 800-53</span>
-                    <span class="chip">NIST 800-171</span>
-                    <span class="chip">ISO 27001</span>
-                    <span class="chip">PCI DSS</span>
-                    <span class="chip">HIPAA</span>
-                    <span class="chip">SOC 2</span>
-                    <span class="chip">CJIS</span>
-                </div>
+            <div class="hero-buttons">
+                <a class="hero-btn primary" href="#projects">View Projects</a>
+                <a class="hero-btn" href="Poston_Dustin.pdf">Download Resume</a>
+                <a class="hero-btn" href="#contact">Contact Me</a>
             </div>
 
         </div>
 
-        <div class="domain-icon" aria-hidden="true">
+        <div class="hero-visual" aria-hidden="true">
             <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="shieldRim" x1="0" y1="0" x2="1" y2="1">
@@ -163,154 +110,179 @@
 
     </div>
 
+</header>
+
+<div class="glass-card">
+
+    <h3 class="first-heading">Portfolio Summary</h3>
+
+    <p>Write summary here</p>
+
+    <section id="current-project">
+
+        <h3>Currently Working On</h3>
+
+        <div class="project-card current-project">
+
+            <span class="status-badge">
+                <span class="status-dot"></span>
+                In Progress
+            </span>
+
+            <h4>Write project name here</h4>
+
+            <p>Write a short description of what you're building or learning here.</p>
+
+            <ul>
+                <li>Tools or frameworks you're using</li>
+                <li>What you're hoping to accomplish</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <h3>Skills &amp; Tools</h3>
+
+    <div class="domain-card">
+
+        <div class="skill-group">
+            <div class="skill-label">Security Domains</div>
+            <div class="chips">
+                <span class="chip">Vulnerability Management</span>
+                <span class="chip">Security Operations</span>
+                <span class="chip">Identity &amp; Access Management</span>
+                <span class="chip">Risk Assessment</span>
+                <span class="chip">Network Security</span>
+                <span class="chip">Compliance &amp; Audit Support</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-label">Tools</div>
+            <div class="chips">
+                <span class="chip">Nessus</span>
+                <span class="chip">Splunk</span>
+                <span class="chip">Sysmon</span>
+                <span class="chip">pfSense</span>
+                <span class="chip">Active Directory</span>
+                <span class="chip">Group Policy</span>
+                <span class="chip">Kali Linux</span>
+                <span class="chip">VirusTotal</span>
+                <span class="chip">SQL</span>
+                <span class="chip">JIRA</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-label">Frameworks &amp; Standards</div>
+            <div class="chips">
+                <span class="chip">MITRE ATT&amp;CK</span>
+                <span class="chip">NIST 800-53</span>
+                <span class="chip">NIST 800-171</span>
+                <span class="chip">ISO 27001</span>
+                <span class="chip">PCI DSS</span>
+                <span class="chip">HIPAA</span>
+                <span class="chip">SOC 2</span>
+                <span class="chip">CJIS</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+         Security Labs (card grid + pop-up case studies)
+    ========================================== -->
     <section id="projects">
 
         <h3>Security Labs</h3>
 
-        <!-- Lab 1 -->
-        <div class="project-card">
+        <div class="lab-grid">
 
-            <h4>Lab 1: Enterprise Environment Build</h4>
+            <!-- Lab 1 card -->
+            <article class="lab-card">
+                <div class="lab-thumb">
+                    <img src="images/VirtualMachines.png"
+                         alt="Enterprise Security Lab Architecture"
+                         loading="lazy">
+                </div>
+                <div class="lab-body">
+                    <span class="lab-num">Lab 1</span>
+                    <h4>Enterprise Environment Build</h4>
+                    <p>A virtual enterprise network with a firewall, Active Directory, workstations, an attacker system, and monitoring.</p>
+                    <div class="chips">
+                        <span class="chip">pfSense</span>
+                        <span class="chip">Active Directory</span>
+                        <span class="chip">Kali Linux</span>
+                        <span class="chip">Splunk</span>
+                    </div>
+                    <button type="button" class="lab-open" data-lab="lab-1">View case study &rarr;</button>
+                </div>
+            </article>
 
-            <p>
-                Designed and deployed a virtual enterprise environment
-                to develop practical experience in identity management,
-                vulnerability management, detection engineering,
-                security monitoring, and incident investigation.
-            </p>
+            <!-- Lab 2 card -->
+            <article class="lab-card">
+                <div class="lab-thumb">
+                    <svg viewBox="0 0 64 64" width="84" height="84" fill="none" stroke="#7dd3fc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="22" cy="32" r="12"/>
+                        <circle cx="22" cy="32" r="3" fill="#7dd3fc"/>
+                        <path d="M34 32 H58"/>
+                        <path d="M50 32 V42"/>
+                        <path d="M42 32 V38"/>
+                    </svg>
+                </div>
+                <div class="lab-body">
+                    <span class="lab-num">Lab 2</span>
+                    <h4>Identity &amp; Access Management</h4>
+                    <p>Domain accounts, password and lockout policies, and Group Policy restrictions.</p>
+                    <div class="chips">
+                        <span class="chip">Active Directory</span>
+                        <span class="chip">Group Policy</span>
+                    </div>
+                    <button type="button" class="lab-open" data-lab="lab-2">View case study &rarr;</button>
+                </div>
+            </article>
 
-            <img src="images/VirtualMachines.png"
-                 alt="Enterprise Security Lab Architecture"
-                 class="project-img">
+            <!-- Lab 3 card (featured) -->
+            <article class="lab-card featured">
+                <span class="featured-badge">&#9733; Featured</span>
+                <div class="lab-thumb">
+                    <img src="images/LucyCredentialScan.png"
+                         alt="Credentialed Nessus Vulnerability Assessment"
+                         loading="lazy">
+                </div>
+                <div class="lab-body">
+                    <span class="lab-num">Lab 3</span>
+                    <h4>Vulnerability Management</h4>
+                    <p>Host discovery, authenticated and unauthenticated scans, risk analysis, and remediation documentation.</p>
+                    <div class="chips">
+                        <span class="chip">Nessus</span>
+                    </div>
+                    <button type="button" class="lab-open" data-lab="lab-3">View case study &rarr;</button>
+                </div>
+            </article>
 
-            <h4>Lab Infrastructure</h4>
-
-            <ul>
-                <li>pfSense Firewall</li>
-                <li>Windows Server Active Directory</li>
-                <li>Windows 11 Workstations</li>
-                <li>Kali Linux Attacker System</li>
-                <li>Ubuntu Security Tools Server</li>
-                <li>Splunk &amp; Sysmon Monitoring</li>
-                <li>Nessus Vulnerability Scanner</li>
-            </ul>
-
-            <dl class="case-study">
-                <dt>Objective</dt>
-                <dd>Write objective here</dd>
-
-                <dt>Design Decisions</dt>
-                <dd>Write why you built the network the way you did (segmentation, firewall rules, etc.) here</dd>
-
-                <dt>Lessons Learned</dt>
-                <dd>Write lessons learned here</dd>
-            </dl>
-
-        </div>
-
-        <!-- Lab 2 -->
-        <div class="project-card">
-
-            <h4>Lab 2: Identity &amp; Access Management</h4>
-
-            <ul>
-                <li>Created and managed domain accounts</li>
-                <li>Implemented password complexity policies</li>
-                <li>Configured account lockout controls</li>
-                <li>Applied Group Policy restrictions</li>
-                <li>Controlled workstation resource access</li>
-            </ul>
-
-            <dl class="case-study">
-                <dt>Objective</dt>
-                <dd>Write objective here</dd>
-
-                <dt>Tools</dt>
-                <dd>Windows Server Active Directory, Group Policy</dd>
-
-                <dt>Results</dt>
-                <dd>Write what you tested and what happened (for example, lockout behavior) here</dd>
-
-                <dt>Lessons Learned</dt>
-                <dd>Write lessons learned here</dd>
-            </dl>
-
-        </div>
-
-        <!-- Lab 3 (featured) -->
-        <div class="project-card featured">
-
-            <span class="featured-badge">&#9733; Featured</span>
-
-            <h4>Lab 3: Vulnerability Management</h4>
-
-            <img src="images/LucyCredentialScan.png"
-                 alt="Credentialed Nessus Vulnerability Assessment"
-                 class="project-img">
-
-            <p>
-                Conducted host discovery, unauthenticated scanning,
-                authenticated scanning, risk analysis, and remediation
-                documentation using Nessus Essentials.
-            </p>
-
-            <dl class="case-study">
-                <dt>Scope</dt>
-                <dd>Write which hosts and networks you scanned here</dd>
-
-                <dt>Methodology</dt>
-                <dd>Write your process here (host discovery, unauthenticated scan, credentialed scan)</dd>
-
-                <dt>Key Findings</dt>
-                <dd>Write your most important findings and their severity here</dd>
-
-                <dt>Prioritization</dt>
-                <dd>Write how you ranked findings (CVSS, exploitability, asset importance) here</dd>
-
-                <dt>Remediation</dt>
-                <dd>Write what you recommended or fixed here</dd>
-
-                <dt>Rescan Result</dt>
-                <dd>Write what changed after remediation here</dd>
-
-                <dt>Lessons Learned</dt>
-                <dd>Write lessons learned here</dd>
-            </dl>
-
-            <!-- When your sanitized report is ready, add it to your folder and uncomment this:
-            <a class="btn" href="Vulnerability_Assessment_Report.pdf">View Full Report</a>
-            -->
-
-        </div>
-
-        <!-- Lab 4 -->
-        <div class="project-card">
-
-            <h4>Lab 4: Security Monitoring &amp; Investigation</h4>
-
-            <p>
-                Generated attack telemetry from a Kali Linux system,
-                collected endpoint logs with Sysmon, centralized
-                telemetry in Splunk, and investigated suspicious
-                activity through security monitoring workflows.
-            </p>
-
-            <dl class="case-study">
-                <dt>Objective</dt>
-                <dd>Write objective here</dd>
-
-                <dt>Attacks Simulated</dt>
-                <dd>Write which attacks you ran from Kali here</dd>
-
-                <dt>Detections</dt>
-                <dd>Write the Splunk searches or alerts you built here</dd>
-
-                <dt>MITRE ATT&amp;CK Mapping</dt>
-                <dd>Write the techniques you observed here</dd>
-
-                <dt>Lessons Learned</dt>
-                <dd>Write lessons learned here</dd>
-            </dl>
+            <!-- Lab 4 card -->
+            <article class="lab-card">
+                <div class="lab-thumb">
+                    <svg viewBox="0 0 64 64" width="84" height="84" fill="none" stroke="#7dd3fc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="6" y="10" width="52" height="44" rx="6"/>
+                        <path d="M16 24 L26 32 L16 40"/>
+                        <path d="M32 42 H46"/>
+                    </svg>
+                </div>
+                <div class="lab-body">
+                    <span class="lab-num">Lab 4</span>
+                    <h4>Security Monitoring &amp; Investigation</h4>
+                    <p>Attack telemetry from Kali, collected with Sysmon and investigated in Splunk.</p>
+                    <div class="chips">
+                        <span class="chip">Splunk</span>
+                        <span class="chip">Sysmon</span>
+                        <span class="chip">Kali Linux</span>
+                    </div>
+                    <button type="button" class="lab-open" data-lab="lab-4">View case study &rarr;</button>
+                </div>
+            </article>
 
         </div>
 
@@ -458,6 +430,173 @@
     </section>
 
 </div>
+
+<!-- ==========================================
+     Lab Case Study Pop-ups
+========================================== -->
+
+<!-- Lab 1 -->
+<dialog id="lab-1" class="lab-modal" aria-labelledby="lab-1-title">
+    <div class="modal-header">
+        <h3 id="lab-1-title">Lab 1: Enterprise Environment Build</h3>
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-content">
+
+        <p>
+            Designed and deployed a virtual enterprise environment
+            to develop practical experience in identity management,
+            vulnerability management, detection engineering,
+            security monitoring, and incident investigation.
+        </p>
+
+        <img src="images/VirtualMachines.png"
+             alt="Enterprise Security Lab Architecture"
+             class="project-img">
+
+        <h4>Lab Infrastructure</h4>
+
+        <ul>
+            <li>pfSense Firewall</li>
+            <li>Windows Server Active Directory</li>
+            <li>Windows 11 Workstations</li>
+            <li>Kali Linux Attacker System</li>
+            <li>Ubuntu Security Tools Server</li>
+            <li>Splunk &amp; Sysmon Monitoring</li>
+            <li>Nessus Vulnerability Scanner</li>
+        </ul>
+
+        <dl class="case-study">
+            <dt>Objective</dt>
+            <dd>Write objective here</dd>
+
+            <dt>Design Decisions</dt>
+            <dd>Write why you built the network the way you did (segmentation, firewall rules, etc.) here</dd>
+
+            <dt>Lessons Learned</dt>
+            <dd>Write lessons learned here</dd>
+        </dl>
+
+    </div>
+</dialog>
+
+<!-- Lab 2 -->
+<dialog id="lab-2" class="lab-modal" aria-labelledby="lab-2-title">
+    <div class="modal-header">
+        <h3 id="lab-2-title">Lab 2: Identity &amp; Access Management</h3>
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-content">
+
+        <ul>
+            <li>Created and managed domain accounts</li>
+            <li>Implemented password complexity policies</li>
+            <li>Configured account lockout controls</li>
+            <li>Applied Group Policy restrictions</li>
+            <li>Controlled workstation resource access</li>
+        </ul>
+
+        <dl class="case-study">
+            <dt>Objective</dt>
+            <dd>Write objective here</dd>
+
+            <dt>Tools</dt>
+            <dd>Windows Server Active Directory, Group Policy</dd>
+
+            <dt>Results</dt>
+            <dd>Write what you tested and what happened (for example, lockout behavior) here</dd>
+
+            <dt>Lessons Learned</dt>
+            <dd>Write lessons learned here</dd>
+        </dl>
+
+    </div>
+</dialog>
+
+<!-- Lab 3 -->
+<dialog id="lab-3" class="lab-modal" aria-labelledby="lab-3-title">
+    <div class="modal-header">
+        <h3 id="lab-3-title">Lab 3: Vulnerability Management</h3>
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-content">
+
+        <img src="images/LucyCredentialScan.png"
+             alt="Credentialed Nessus Vulnerability Assessment"
+             class="project-img">
+
+        <p>
+            Conducted host discovery, unauthenticated scanning,
+            authenticated scanning, risk analysis, and remediation
+            documentation using Nessus Essentials.
+        </p>
+
+        <dl class="case-study">
+            <dt>Scope</dt>
+            <dd>Write which hosts and networks you scanned here</dd>
+
+            <dt>Methodology</dt>
+            <dd>Write your process here (host discovery, unauthenticated scan, credentialed scan)</dd>
+
+            <dt>Key Findings</dt>
+            <dd>Write your most important findings and their severity here</dd>
+
+            <dt>Prioritization</dt>
+            <dd>Write how you ranked findings (CVSS, exploitability, asset importance) here</dd>
+
+            <dt>Remediation</dt>
+            <dd>Write what you recommended or fixed here</dd>
+
+            <dt>Rescan Result</dt>
+            <dd>Write what changed after remediation here</dd>
+
+            <dt>Lessons Learned</dt>
+            <dd>Write lessons learned here</dd>
+        </dl>
+
+        <!-- When your sanitized report is ready, add it to your folder and uncomment this:
+        <a class="btn" href="Vulnerability_Assessment_Report.pdf">View Full Report</a>
+        -->
+
+    </div>
+</dialog>
+
+<!-- Lab 4 -->
+<dialog id="lab-4" class="lab-modal" aria-labelledby="lab-4-title">
+    <div class="modal-header">
+        <h3 id="lab-4-title">Lab 4: Security Monitoring &amp; Investigation</h3>
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-content">
+
+        <p>
+            Generated attack telemetry from a Kali Linux system,
+            collected endpoint logs with Sysmon, centralized
+            telemetry in Splunk, and investigated suspicious
+            activity through security monitoring workflows.
+        </p>
+
+        <dl class="case-study">
+            <dt>Objective</dt>
+            <dd>Write objective here</dd>
+
+            <dt>Attacks Simulated</dt>
+            <dd>Write which attacks you ran from Kali here</dd>
+
+            <dt>Detections</dt>
+            <dd>Write the Splunk searches or alerts you built here</dd>
+
+            <dt>MITRE ATT&amp;CK Mapping</dt>
+            <dd>Write the techniques you observed here</dd>
+
+            <dt>Lessons Learned</dt>
+            <dd>Write lessons learned here</dd>
+        </dl>
+
+    </div>
+</dialog>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
