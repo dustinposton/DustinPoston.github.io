@@ -26,6 +26,30 @@
 
     <p>Write summary here</p>
 
+    <section id="current-project">
+
+        <h3>Currently Working On</h3>
+
+        <div class="project-card current-project">
+
+            <span class="status-badge">
+                <span class="status-dot"></span>
+                In Progress
+            </span>
+
+            <h4>Write project name here</h4>
+
+            <p>Write a short description of what you're building or learning here.</p>
+
+            <ul>
+                <li>Tools or frameworks you're using</li>
+                <li>What you're hoping to accomplish</li>
+            </ul>
+
+        </div>
+
+    </section>
+
     <h3>Security Domains</h3>
 
     <div class="domain-card">
@@ -85,24 +109,60 @@
         </div>
 
         <div class="domain-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <linearGradient id="shieldGradient" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#38bdf8"/>
+                    <linearGradient id="shieldRim" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#7dd3fc"/>
                         <stop offset="100%" stop-color="#14b8a6"/>
                     </linearGradient>
+                    <linearGradient id="shieldLeft" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="100%" stop-color="#0e7490"/>
+                    </linearGradient>
+                    <linearGradient id="shieldRight" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#0891b2"/>
+                        <stop offset="100%" stop-color="#0f3f4f"/>
+                    </linearGradient>
                 </defs>
-                <path d="M50 5 L90 20 V58 C90 85 72 105 50 115 C28 105 10 85 10 58 V20 Z"
-                      fill="rgba(56,189,248,0.12)"
-                      stroke="url(#shieldGradient)"
-                      stroke-width="3"
+
+                <!-- circuit traces -->
+                <g stroke="#38bdf8" stroke-opacity="0.45" stroke-width="2" fill="none" stroke-linecap="round">
+                    <path d="M25 95 H12 V125"/>
+                    <path d="M25 160 H6"/>
+                    <path d="M215 95 H228 V125"/>
+                    <path d="M215 160 H234"/>
+                </g>
+                <g fill="#7dd3fc" fill-opacity="0.8">
+                    <circle cx="12" cy="130" r="4"/>
+                    <circle cx="6" cy="160" r="4"/>
+                    <circle cx="228" cy="130" r="4"/>
+                    <circle cx="234" cy="160" r="4"/>
+                </g>
+
+                <!-- outer rim -->
+                <path d="M120 10 L215 45 V130 C215 195 175 245 120 270 C65 245 25 195 25 130 V45 Z"
+                      fill="#0b2535"
+                      stroke="url(#shieldRim)"
+                      stroke-width="4"
                       stroke-linejoin="round"/>
-                <path d="M32 60 L45 73 L69 45"
+
+                <!-- two-tone faceted face -->
+                <path d="M120 28 L42 57 V130 C42 184 75 227 120 249 Z" fill="url(#shieldLeft)"/>
+                <path d="M120 28 L198 57 V130 C198 184 165 227 120 249 Z" fill="url(#shieldRight)"/>
+
+                <!-- center seam and top highlight -->
+                <path d="M120 28 V249" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+                <path d="M120 28 L42 57 V100 L120 70 Z" fill="#ffffff" fill-opacity="0.10"/>
+
+                <!-- padlock -->
+                <path d="M104 130 V114 C104 104 111 98 120 98 C129 98 136 104 136 114 V130"
                       fill="none"
-                      stroke="url(#shieldGradient)"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
+                      stroke="#e0f2fe"
+                      stroke-width="8"
+                      stroke-linecap="round"/>
+                <rect x="93" y="128" width="54" height="44" rx="8" fill="#f0f9ff"/>
+                <circle cx="120" cy="146" r="6" fill="#0e7490"/>
+                <rect x="118" y="148" width="4" height="12" rx="2" fill="#0e7490"/>
             </svg>
         </div>
 
