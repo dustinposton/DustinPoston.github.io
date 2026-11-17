@@ -107,6 +107,19 @@ h2 {
     margin-bottom: 40px;
 }
 
+h2.role {
+    margin-bottom: 12px;
+}
+
+.tagline {
+
+    text-align: center;
+
+    margin: 0;
+
+    color: #9ca3af;
+}
+
 h3 {
 
     font-size: 2rem;
@@ -227,10 +240,10 @@ section {
 }
 
 /* ==========================================
-   Security Domains Section
+   Skills & Tools Section
 ========================================== */
 
-/* Two equal columns: bars on the left half, shield on the right half */
+/* Two equal columns: skills on the left half, shield on the right half */
 .domain-card {
 
     display: grid;
@@ -245,6 +258,49 @@ section {
     border-radius: 20px;
 
     margin-bottom: 50px;
+}
+
+.skill-group {
+    margin-bottom: 28px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-label {
+
+    margin-bottom: 12px;
+
+    color: #7dd3fc;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.chips {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+
+    padding: 7px 14px;
+
+    border-radius: 100px;
+
+    background: rgba(56,189,248,0.10);
+
+    border: 1px solid rgba(56,189,248,0.30);
+
+    color: #e0f2fe;
+
+    font-size: 0.92rem;
 }
 
 .domain-icon {
@@ -265,50 +321,6 @@ section {
     height: auto;
 
     filter: drop-shadow(0 0 30px rgba(56,189,248,0.30));
-}
-
-.domain {
-
-    margin-bottom: 25px;
-}
-
-.domain:last-child {
-    margin-bottom: 0;
-}
-
-.domain-name {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    margin-bottom: 8px;
-
-    font-weight: 600;
-}
-
-.progress-bar {
-
-    height: 12px;
-
-    background: rgba(255,255,255,.10);
-
-    border-radius: 100px;
-
-    overflow: hidden;
-}
-
-.progress {
-
-    height: 100%;
-
-    border-radius: 100px;
-
-    background: linear-gradient(
-        90deg,
-        #38bdf8,
-        #14b8a6
-    );
 }
 
 /* ==========================================
@@ -349,6 +361,100 @@ section {
     border-top: 1px solid rgba(255,255,255,0.15);
 
     margin: 60px 0;
+}
+
+/* Featured lab (vulnerability management) */
+.featured {
+
+    border-color: rgba(56,189,248,0.35);
+
+    box-shadow: 0 0 30px rgba(56,189,248,0.10);
+}
+
+.featured-badge {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 100px;
+
+    background: rgba(56,189,248,0.15);
+
+    border: 1px solid rgba(56,189,248,0.45);
+
+    color: #7dd3fc;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* Case-study fields (Objective / Tools / Findings / Lessons) */
+.case-study {
+
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 14px 24px;
+
+    margin: 30px 0 0 0;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+.case-study dt {
+
+    color: #7dd3fc;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.case-study dd {
+
+    margin: 0;
+
+    color: #d1d5db;
+
+    line-height: 1.7;
+}
+
+/* ==========================================
+   Experience
+========================================== */
+
+.job-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    margin-bottom: 10px;
+}
+
+.job-header h4 {
+    margin: 0 0 6px 0;
+}
+
+.job-company {
+
+    padding-left: 16px;
+
+    color: #7dd3fc;
+}
+
+.job-dates {
+
+    color: #9ca3af;
+
+    white-space: nowrap;
 }
 
 /* ==========================================
@@ -442,7 +548,7 @@ section {
         padding: 20px;
     }
 
-    /* Stack the bars and shield on phones */
+    /* Stack the skills and shield on phones */
     .domain-card {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -455,5 +561,19 @@ section {
 
     .domain-icon svg {
         max-width: 160px;
+    }
+
+    .case-study {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .case-study dd {
+        margin-bottom: 14px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        gap: 4px;
     }
 }
