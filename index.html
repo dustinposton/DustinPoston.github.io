@@ -588,19 +588,19 @@
 
         <dl class="case-study">
             <dt>Objective</dt>
-            <dd>Write objective here</dd>
+            <dd>Investigate alert logs to identify if true positive alert.  Document every indicator of compromise found and possible root cause, escalate if necessary. </dd>
 
             <dt>Attacks Simulated</dt>
-            <dd>Write which attacks you ran from Kali here</dd>
+            <dd>Brute-force attack, phishing attack, possible false positive simulated of employee typing wrong password</dd>
 
             <dt>Detections</dt>
-            <dd>Write the Splunk searches or alerts you built here</dd>
+            <dd>Windows Event ID 4625, 4624 (for failed/successful logins) for Splunk I was searching for the EventCode=4625 of the index and furthering my search details based on evidence.</dd>
 
             <dt>MITRE ATT&amp;CK Mapping</dt>
-            <dd>Write the techniques you observed here</dd>
+            <dd>Mapped brute force attack to T1110 as they're technique and found recommendations included to document.</dd>
 
             <dt>Lessons Learned</dt>
-            <dd>Write lessons learned here</dd>
+            <dd>Not every attack is an attacker, so it is important we dig into logs and find out details before jumping the gun.  On the other hand being fast and efficient can mean the difference in an attack escalating quickly to critical assets.</dd>
         </dl>
 
     </div>
