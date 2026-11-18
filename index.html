@@ -543,25 +543,22 @@
 
         <dl class="case-study">
             <dt>Scope</dt>
-            <dd>Write which hosts and networks you scanned here</dd>
+            <dd>Scanning network IP to discover what hosts are alive/dead and possibly scan for vulnerabilities</dd>
 
             <dt>Methodology</dt>
-            <dd>Write your process here (host discovery, unauthenticated scan, credentialed scan)</dd>
+            <dd>First I used Nessus to find hosts that are alive within my home lab.  After I would attempt a non-credential scan to see what attackers might see, and credential scan for internal vulnerabilities</dd>
 
             <dt>Key Findings</dt>
-            <dd>Write your most important findings and their severity here</dd>
+            <dd>Highest severity according to CVE rating was ICMP timestamp</dd>
 
             <dt>Prioritization</dt>
-            <dd>Write how you ranked findings (CVSS, exploitability, asset importance) here</dd>
+            <dd>Most issues were just information as I did not do an extensive vulnerability scan, I would prioritize the ICMP timestamp issue as attackers can use it to gain authentication through timestamps</dd>
 
             <dt>Remediation</dt>
-            <dd>Write what you recommended or fixed here</dd>
-
-            <dt>Rescan Result</dt>
-            <dd>Write what changed after remediation here</dd>
+            <dd>Restrict SNMP from unauthorized users, this is a network device concern so cutting off access and disabling timestamps would be the recommended route</dd>
 
             <dt>Lessons Learned</dt>
-            <dd>Write lessons learned here</dd>
+            <dd>I learned the most configuration issues that can be an attackers way in can be found from vulnerability scans.  Scans are a good baseline to see where you're vulnerable and what you can focus on remediating immediately</dd>
         </dl>
 
         <!-- When your sanitized report is ready, add it to your folder and uncomment this:
